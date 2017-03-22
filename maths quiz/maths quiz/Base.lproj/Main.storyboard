@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="maths_quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvg-4Z-a3o">
+                                <rect key="frame" x="20" y="123" width="560" height="53"/>
+                                <color key="backgroundColor" red="0.55357212135823985" green="1" blue="0.91300128264221447" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.13353276755866353" green="0.58103084981279873" blue="0.60732984293193715" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fq5-BB-His"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbc-ib-OiB">
+                                <rect key="frame" x="20" y="205" width="560" height="53"/>
+                                <color key="backgroundColor" red="0.55357212140000001" green="1" blue="0.91300128260000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.13353276759999999" green="0.58103084979999997" blue="0.60732984290000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AsR-Et-fAA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Tv-Cg-um2">
+                                <rect key="frame" x="20" y="287" width="560" height="53"/>
+                                <color key="backgroundColor" red="0.55357212140000001" green="1" blue="0.91300128260000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.13353276759999999" green="0.58103084979999997" blue="0.60732984290000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button3Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ld-1I-rSo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2l-Ot-ccg">
+                                <rect key="frame" x="20" y="366" width="560" height="53"/>
+                                <color key="backgroundColor" red="0.55357212140000001" green="1" blue="0.91300128260000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.13353276759999999" green="0.58103084979999997" blue="0.60732984290000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBT-Mb-8hd">
+                                <rect key="frame" x="20" y="13" width="560" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sbc-ib-OiB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5le-Bv-43S"/>
+                            <constraint firstItem="1Tv-Cg-um2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="CfD-Hs-Fpj"/>
+                            <constraint firstItem="xvg-4Z-a3o" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="JdC-qz-Rw3"/>
+                            <constraint firstItem="1Tv-Cg-um2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VN4-RE-wBp"/>
+                            <constraint firstItem="xvg-4Z-a3o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bKu-lr-kC1"/>
+                            <constraint firstItem="O2l-Ot-ccg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="pRh-UG-IzO"/>
+                            <constraint firstItem="VBT-Mb-8hd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="t3s-3p-Vyt"/>
+                            <constraint firstItem="VBT-Mb-8hd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v7g-wq-kdC"/>
+                            <constraint firstItem="O2l-Ot-ccg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w2L-A9-MyJ"/>
+                            <constraint firstItem="Sbc-ib-OiB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="wUF-V9-UX4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Button1" destination="xvg-4Z-a3o" id="Z2I-ze-PnA"/>
+                        <outlet property="Button2" destination="Sbc-ib-OiB" id="7j5-9K-J4U"/>
+                        <outlet property="Button3" destination="1Tv-Cg-um2" id="bWC-5b-Ttr"/>
+                        <outlet property="Button4" destination="O2l-Ot-ccg" id="2JG-bc-Xv4"/>
+                        <outlet property="Button4Action" destination="O2l-Ot-ccg" id="ctM-A5-0hB"/>
+                        <outlet property="QuestionLabel" destination="VBT-Mb-8hd" id="7Ir-f3-FKG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="493"/>
+        </scene>
+    </scenes>
+</document>
