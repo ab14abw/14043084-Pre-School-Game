@@ -23,8 +23,8 @@ class ViewController: UIViewController {
     @IBOutlet var Button9: UIButton!
 
     
-    @IBOutlet var treasurebutton: UIButton!
-    @IBOutlet var NextButton: UIButton!
+   
+   
     @IBOutlet var LabelAnswer: UILabel!
     
     
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        Hide()
+        
         
         RandomQuestions()
     }
@@ -226,12 +226,12 @@ class ViewController: UIViewController {
 
         func Hide () {
             LabelAnswer.hidden = true
-            NextButton.hidden = true
     }
+    
     
         func UnHide (){
             LabelAnswer.hidden = false
-            NextButton.hidden = false
+        
         }
     
     @IBAction func Button0Action(sender: AnyObject) {
@@ -239,7 +239,8 @@ class ViewController: UIViewController {
         
         if (CorrectAnswer == "0"){
             
-            LabelAnswer.text = "You Are Right!!"
+            performSegueWithIdentifier("next", sender: self)
+            RandomQuestions()
         }
         else{
             LabelAnswer.text = "You Are Wrong!!"
@@ -252,7 +253,9 @@ class ViewController: UIViewController {
         
         if (CorrectAnswer == "1"){
             
-            LabelAnswer.text = "You Are Right!!"
+            
+            performSegueWithIdentifier("next", sender: self)
+            RandomQuestions()
         }
         else{
             LabelAnswer.text = "You Are Wrong!!"
@@ -265,7 +268,8 @@ class ViewController: UIViewController {
         
         if (CorrectAnswer == "2"){
             
-            LabelAnswer.text = "You Are Right!!"
+            performSegueWithIdentifier("next", sender: self)
+            RandomQuestions()
         }
         else{
             LabelAnswer.text = "You Are Wrong!!"
@@ -278,7 +282,8 @@ class ViewController: UIViewController {
         
         if (CorrectAnswer == "3"){
             
-            LabelAnswer.text = "You Are Right!!"
+            performSegueWithIdentifier("next", sender: self)
+            RandomQuestions()
         }
         else{
             LabelAnswer.text = "You Are Wrong!!"
@@ -292,7 +297,8 @@ class ViewController: UIViewController {
         
         if (CorrectAnswer == "4"){
             
-            LabelAnswer.text = "You Are Right!!"
+            performSegueWithIdentifier("next", sender: self)
+            RandomQuestions()
         }
         else{
             LabelAnswer.text = "You Are Wrong!!"
@@ -305,7 +311,8 @@ class ViewController: UIViewController {
         
         if (CorrectAnswer == "5"){
             
-            LabelAnswer.text = "You Are Right!!"
+            performSegueWithIdentifier("next", sender: self)
+            RandomQuestions()
         }
         else{
             LabelAnswer.text = "You Are Wrong!!"
@@ -318,7 +325,8 @@ class ViewController: UIViewController {
         
         if (CorrectAnswer == "6"){
             
-            LabelAnswer.text = "You Are Right!!"
+            performSegueWithIdentifier("next", sender: self)
+            RandomQuestions()
         }
         else{
             NSLog("You Are Wrong!!")
@@ -330,8 +338,10 @@ class ViewController: UIViewController {
         UnHide()
         
         if (CorrectAnswer == "7"){
+            performSegueWithIdentifier("next", sender: self)
+            RandomQuestions()
             
-            LabelAnswer.text = "You Are Right!!"
+        
         }
         else{
             LabelAnswer.text = "You Are Wrong!!"
@@ -344,7 +354,8 @@ class ViewController: UIViewController {
         
         if (CorrectAnswer == "8"){
             
-            NSLog("You Are Right!!")
+            performSegueWithIdentifier("next", sender: self)
+            RandomQuestions()
         }
         else{
             NSLog("You Are Wrong!!")
@@ -357,7 +368,8 @@ class ViewController: UIViewController {
         
         if (CorrectAnswer == "9"){
             
-            LabelAnswer.text = "You Are Right!!"
+            performSegueWithIdentifier("next", sender: self)
+            RandomQuestions()
         }
         else{
            LabelAnswer.text = "You Are Wrong!!"
@@ -365,10 +377,7 @@ class ViewController: UIViewController {
 
     }
     
-    @IBAction func NextButton(sender: AnyObject) {
-        RandomQuestions()
-    }
-    
+   
     
 
     

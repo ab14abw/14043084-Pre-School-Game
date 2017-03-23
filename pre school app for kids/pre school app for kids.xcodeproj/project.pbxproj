@@ -19,7 +19,6 @@
 		C42B485B1E8329AA0091B3BB /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = C42B48511E8329AA0091B3BB /* 9.png */; };
 		C42B485C1E8329B50091B3BB /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = C42B48481E8329AA0091B3BB /* 0.png */; };
 		C42B485D1E8329B60091B3BB /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = C42B48481E8329AA0091B3BB /* 0.png */; };
-		C42B485F1E832E440091B3BB /* Beach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C42B485E1E832E440091B3BB /* Beach.jpg */; };
 		C42B48691E8334BA0091B3BB /* play_again.png in Resources */ = {isa = PBXBuildFile; fileRef = C42B48681E8334BA0091B3BB /* play_again.png */; };
 		C42B486D1E83351A0091B3BB /* play_again.png in Resources */ = {isa = PBXBuildFile; fileRef = C42B486C1E83351A0091B3BB /* play_again.png */; };
 		C42B486E1E83351A0091B3BB /* play_again.png in Resources */ = {isa = PBXBuildFile; fileRef = C42B486C1E83351A0091B3BB /* play_again.png */; };
@@ -40,6 +39,13 @@
 		C49B656F1E7F2E1800B11734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49B656D1E7F2E1800B11734 /* LaunchScreen.storyboard */; };
 		C49B657A1E7F2E1900B11734 /* pre_school_app_for_kidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B65791E7F2E1900B11734 /* pre_school_app_for_kidsTests.swift */; };
 		C49B65851E7F2E1900B11734 /* pre_school_app_for_kidsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B65841E7F2E1900B11734 /* pre_school_app_for_kidsUITests.swift */; };
+		C4F763731E842F3D00B9D078 /* Beach.png in Resources */ = {isa = PBXBuildFile; fileRef = C4F763721E842F3D00B9D078 /* Beach.png */; };
+		C4F763791E84386300B9D078 /* replay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F763781E84386300B9D078 /* replay.swift */; };
+		C4F7637A1E84386300B9D078 /* replay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F763781E84386300B9D078 /* replay.swift */; };
+		C4F7637B1E84386300B9D078 /* replay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F763781E84386300B9D078 /* replay.swift */; };
+		C4F7637D1E843C1C00B9D078 /* Play.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7637C1E843C1C00B9D078 /* Play.swift */; };
+		C4F7637E1E843C1C00B9D078 /* Play.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7637C1E843C1C00B9D078 /* Play.swift */; };
+		C4F7637F1E843C1C00B9D078 /* Play.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7637C1E843C1C00B9D078 /* Play.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +76,6 @@
 		C42B484F1E8329AA0091B3BB /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 7.png; path = newnumbers/7.png; sourceTree = SOURCE_ROOT; };
 		C42B48501E8329AA0091B3BB /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8.png; path = newnumbers/8.png; sourceTree = SOURCE_ROOT; };
 		C42B48511E8329AA0091B3BB /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 9.png; path = newnumbers/9.png; sourceTree = SOURCE_ROOT; };
-		C42B485E1E832E440091B3BB /* Beach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Beach.jpg; path = ../../Beach.jpg; sourceTree = "<group>"; };
 		C42B48681E8334BA0091B3BB /* play_again.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play_again.png; path = newnumbers/play_again.png; sourceTree = "<group>"; };
 		C42B486C1E83351A0091B3BB /* play_again.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_again.png; sourceTree = "<group>"; };
 		C42B48701E8338B40091B3BB /* treasurechestopen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treasurechestopen.png; sourceTree = "<group>"; };
@@ -89,6 +94,9 @@
 		C49B65801E7F2E1900B11734 /* pre school app for kidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pre school app for kidsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49B65841E7F2E1900B11734 /* pre_school_app_for_kidsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pre_school_app_for_kidsUITests.swift; sourceTree = "<group>"; };
 		C49B65861E7F2E1900B11734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4F763721E842F3D00B9D078 /* Beach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Beach.png; sourceTree = "<group>"; };
+		C4F763781E84386300B9D078 /* replay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = replay.swift; path = ../replay.swift; sourceTree = "<group>"; };
+		C4F7637C1E843C1C00B9D078 /* Play.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Play.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,7 @@
 		C49B65581E7F2E1800B11734 = {
 			isa = PBXGroup;
 			children = (
+				C4F7637C1E843C1C00B9D078 /* Play.swift */,
 				C42B48681E8334BA0091B3BB /* play_again.png */,
 				C49B65631E7F2E1800B11734 /* pre school app for kids */,
 				C49B65781E7F2E1900B11734 /* pre school app for kidsTests */,
@@ -143,10 +152,11 @@
 				C49B65641E7F2E1800B11734 /* AppDelegate.swift */,
 				C49B65661E7F2E1800B11734 /* ViewController.swift */,
 				C42B48781E834D4F0091B3BB /* Dragging_image0.swift */,
+				C4F763781E84386300B9D078 /* replay.swift */,
 				C49B65681E7F2E1800B11734 /* Main.storyboard */,
+				C4F763721E842F3D00B9D078 /* Beach.png */,
 				C42B487C1E8352D90091B3BB /* bananas.png */,
 				C42B48701E8338B40091B3BB /* treasurechestopen.png */,
-				C42B485E1E832E440091B3BB /* Beach.jpg */,
 				C42B486C1E83351A0091B3BB /* play_again.png */,
 				C42B48481E8329AA0091B3BB /* 0.png */,
 				C42B48491E8329AA0091B3BB /* 1.png */,
@@ -287,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F763731E842F3D00B9D078 /* Beach.png in Resources */,
 				C42B48711E8338B40091B3BB /* treasurechestopen.png in Resources */,
 				C42B48571E8329AA0091B3BB /* 5.png in Resources */,
 				C42B48591E8329AA0091B3BB /* 7.png in Resources */,
@@ -300,7 +311,6 @@
 				C49B656F1E7F2E1800B11734 /* LaunchScreen.storyboard in Resources */,
 				C42B48581E8329AA0091B3BB /* 6.png in Resources */,
 				C49B656C1E7F2E1800B11734 /* Assets.xcassets in Resources */,
-				C42B485F1E832E440091B3BB /* Beach.jpg in Resources */,
 				C42B487D1E8352D90091B3BB /* bananas.png in Resources */,
 				C49B656A1E7F2E1800B11734 /* Main.storyboard in Resources */,
 				C42B48561E8329AA0091B3BB /* 4.png in Resources */,
@@ -337,9 +347,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F763791E84386300B9D078 /* replay.swift in Sources */,
 				C49B65671E7F2E1800B11734 /* ViewController.swift in Sources */,
 				C49B65651E7F2E1800B11734 /* AppDelegate.swift in Sources */,
 				C42B48791E834D4F0091B3BB /* Dragging_image0.swift in Sources */,
+				C4F7637D1E843C1C00B9D078 /* Play.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +360,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C49B657A1E7F2E1900B11734 /* pre_school_app_for_kidsTests.swift in Sources */,
+				C4F7637A1E84386300B9D078 /* replay.swift in Sources */,
 				C42B487A1E8352620091B3BB /* Dragging_image0.swift in Sources */,
+				C4F7637E1E843C1C00B9D078 /* Play.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +371,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C49B65851E7F2E1900B11734 /* pre_school_app_for_kidsUITests.swift in Sources */,
+				C4F7637B1E84386300B9D078 /* replay.swift in Sources */,
 				C42B487B1E8352640091B3BB /* Dragging_image0.swift in Sources */,
+				C4F7637F1E843C1C00B9D078 /* Play.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

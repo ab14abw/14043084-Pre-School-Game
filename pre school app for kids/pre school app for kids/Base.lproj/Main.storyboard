@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fEL-wd-rSd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Play-->
+        <scene sceneID="igM-v5-f2u">
+            <objects>
+                <viewController id="fEL-wd-rSd" customClass="Play" customModule="pre_school_app_for_kids" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hTJ-gx-TJr"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ck-hI-2y8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Ln-jM-bji">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MyD-1a-Wh7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sp1-1j-Ln0">
+                                <rect key="frame" x="78" y="242" width="270" height="218"/>
+                                <state key="normal" title="Button" image="play_again.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="teI-Pn-Z2Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7bI-t0-RQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-192" y="427"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -18,15 +49,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Beach.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tq3-c2-qOr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Beach.png" translatesAutoresizingMaskIntoConstraints="NO" id="tq3-c2-qOr">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wa-HR-bKD">
-                                <rect key="frame" x="20" y="176" width="374" height="79"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="treasurechestopen.png" translatesAutoresizingMaskIntoConstraints="NO" id="4ph-0a-hfX">
+                                <rect key="frame" x="99" y="529" width="231" height="207"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="43w-J3-Tdb">
                                 <rect key="frame" x="42" y="37" width="330" height="105"/>
                                 <subviews>
@@ -131,28 +159,45 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzU-6P-dhk">
-                                <rect key="frame" x="166" y="375" width="82" height="85"/>
-                                <state key="normal" title="Button" image="play_again.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="NextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cwS-Ws-VRd"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqg-jA-yCI">
                                 <rect key="frame" x="20" y="273" width="374" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVK-o8-mYB">
-                                <rect key="frame" x="68" y="490" width="243" height="238"/>
-                                <state key="normal" title="Button" image="treasurechestopen.png"/>
-                            </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bananas.png" translatesAutoresizingMaskIntoConstraints="NO" id="7B7-qd-m4C" customClass="Dragging_image0" customModule="pre_school_app_for_kids" customModuleProvider="target">
-                                <rect key="frame" x="93" y="564" width="64" height="57"/>
+                                <rect key="frame" x="55" y="643" width="64" height="57"/>
                             </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bananas.png" translatesAutoresizingMaskIntoConstraints="NO" id="qrd-SX-WXN" customClass="Dragging_image0" customModule="pre_school_app_for_kids" customModuleProvider="target">
+                                <rect key="frame" x="175" y="592" width="64" height="57"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bananas.png" translatesAutoresizingMaskIntoConstraints="NO" id="h48-KS-pX3" customClass="Dragging_image0" customModule="pre_school_app_for_kids" customModuleProvider="target">
+                                <rect key="frame" x="216" y="598" width="64" height="57"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bananas.png" translatesAutoresizingMaskIntoConstraints="NO" id="PJ7-5u-Nql" customClass="Dragging_image0" customModule="pre_school_app_for_kids" customModuleProvider="target">
+                                <rect key="frame" x="27" y="621" width="64" height="57"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bananas.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Cg-gh-Oto" customClass="Dragging_image0" customModule="pre_school_app_for_kids" customModuleProvider="target">
+                                <rect key="frame" x="195" y="581" width="64" height="57"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bananas.png" translatesAutoresizingMaskIntoConstraints="NO" id="1WY-g8-gqC" customClass="Dragging_image0" customModule="pre_school_app_for_kids" customModuleProvider="target">
+                                <rect key="frame" x="112" y="666" width="64" height="57"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bananas.png" translatesAutoresizingMaskIntoConstraints="NO" id="saA-n9-1XV" customClass="Dragging_image0" customModule="pre_school_app_for_kids" customModuleProvider="target">
+                                <rect key="frame" x="136" y="671" width="64" height="57"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bananas.png" translatesAutoresizingMaskIntoConstraints="NO" id="AcN-Zl-R0a" customClass="Dragging_image0" customModule="pre_school_app_for_kids" customModuleProvider="target">
+                                <rect key="frame" x="144" y="586" width="64" height="57"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bananas.png" translatesAutoresizingMaskIntoConstraints="NO" id="cXi-vh-Coc" customClass="Dragging_image0" customModule="pre_school_app_for_kids" customModuleProvider="target">
+                                <rect key="frame" x="288" y="653" width="64" height="57"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wa-HR-bKD">
+                                <rect key="frame" x="20" y="176" width="374" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -177,14 +222,47 @@
                         <outlet property="Button8" destination="Wjq-ak-iMy" id="EJF-dP-xK3"/>
                         <outlet property="Button9" destination="NXq-Tz-Czm" id="mYG-f8-I3k"/>
                         <outlet property="LabelAnswer" destination="Zqg-jA-yCI" id="Pkh-Hw-zvR"/>
-                        <outlet property="NextButton" destination="DzU-6P-dhk" id="egs-Xd-sTU"/>
                         <outlet property="QuestionLabel" destination="7Wa-HR-bKD" id="vug-rs-tog"/>
-                        <outlet property="treasurebutton" destination="yVK-o8-mYB" id="3yg-Ks-dnr"/>
+                        <segue destination="rfQ-S2-q9j" kind="show" identifier="next" id="8to-yo-PXc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+        <!--Replay-->
+        <scene sceneID="ESA-O7-X7p">
+            <objects>
+                <viewController id="rfQ-S2-q9j" customClass="replay" customModule="pre_school_app_for_kids" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oei-h7-Pbs"/>
+                        <viewControllerLayoutGuide type="bottom" id="4L0-bT-Dct"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e4Z-aO-uld">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0T-Qs-7Ib">
+                                <rect key="frame" x="83" y="268" width="270" height="218"/>
+                                <state key="normal" title="Button" image="play_again.png"/>
+                                <connections>
+                                    <action selector="replay:" destination="rfQ-S2-q9j" eventType="touchUpInside" id="iOj-rQ-z6k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S0T-Qs-7Ib" firstAttribute="top" secondItem="Oei-h7-Pbs" secondAttribute="bottom" constant="248" id="BDT-12-Mea"/>
+                            <constraint firstItem="4L0-bT-Dct" firstAttribute="top" secondItem="S0T-Qs-7Ib" secondAttribute="bottom" constant="250" id="BSh-st-YfQ"/>
+                            <constraint firstItem="S0T-Qs-7Ib" firstAttribute="leading" secondItem="e4Z-aO-uld" secondAttribute="leadingMargin" constant="63" id="gUQ-75-EZC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S0T-Qs-7Ib" secondAttribute="trailing" constant="41" id="sdS-S5-8nB"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SeH-QL-orH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="838" y="418"/>
         </scene>
     </scenes>
     <resources>
@@ -198,7 +276,7 @@
         <image name="7.png" width="110" height="179"/>
         <image name="8.png" width="118" height="178"/>
         <image name="9.png" width="129" height="168"/>
-        <image name="Beach.jpg" width="1080" height="1920"/>
+        <image name="Beach.png" width="1080" height="1920"/>
         <image name="bananas.png" width="2569" height="4605"/>
         <image name="play_again.png" width="216" height="218"/>
         <image name="treasurechestopen.png" width="3074" height="2904"/>
